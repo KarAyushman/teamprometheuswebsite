@@ -1,6 +1,7 @@
+import gsap from "gsap";
 export default function Carousel() {
   const statements = [
-    'The primary goal of "Prometheus" is to advance autonomous soccer-playing robots, fostering innovation and excellence in robotics at VIT Vellore and across the nation.',
+    "The primary goal of Prometheus is to advance autonomous soccer-playing robots, fostering innovation and excellence in robotics at VIT Vellore and across the nation.",
     "We aim to compete at the highest levels in global competitions while driving the development of swarm intelligence and humanoid robotics for cutting-edge advancements.",
     "Our focus is on integrating modern techniques like Reinforcement Learning (RL) and Computer Vision (CV) into robotics, addressing the existing gaps at VIT.",
     "By promoting interdisciplinary AI research, we aim to drive progress in swarm intelligence and humanoid robotics for the benefit of all robotics teams through publication of research papers.",
@@ -18,6 +19,16 @@ export default function Carousel() {
             <div
               key={index}
               className="border-promlogogold border-2 group overflow-hidden text-white font-prom-header-font relative md:p-12 p-4 min-h-40 rounded-lg flex items-center justify-center md:text-lg text-base"
+              onMouseEnter={() => {
+                const idElement = "#" + "link-" + index;
+                gsap.to("#cursor", { scale: 4 });
+                gsap.to(idElement, { opacity: 100 });
+              }}
+              onMouseLeave={() => {
+                const idElement = "#" + "link-" + index;
+                gsap.to("#cursor", { scale: 1 });
+                gsap.to(idElement, { opacity: 0 });
+              }}
             >
               <h1 className="text-center">{statement}</h1>
             </div>
