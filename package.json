@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.1",
   "type": "module",
-  "homepage": "https://TeamPrometheusML.github.io/website",
+  "homepage": "https://teamprometheusml.github.io/website/",
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",
