@@ -46,28 +46,26 @@ export default function Homepage() {
             className="md:max-w-2xl rounded-2xl"
             src="/src/assets/almost-scores.webm"
             onMouseEnter={() => {
+              gsap.to("#cursor", { scale: 4 });
               if (isVideoPaused) {
-                gsap.to("#cursor", { scale: 4 });
-                gsap.to("#play-button", { opacity: 100 });
+                window.setActiveCursorIcon("play-button");
               } else {
-                gsap.to("#cursor", { scale: 4 });
-                gsap.to("#pause-button", { opacity: 100 });
+                window.setActiveCursorIcon("pause-button");
               }
             }}
             onMouseLeave={() => {
               gsap.to("#cursor", { scale: 1 });
-              gsap.to("#play-button", { opacity: 0 });
-              gsap.to("#pause-button", { opacity: 0 });
+              window.setActiveCursorIcon(null); // Hide all icons
             }}
             onClick={() => {
               if (isVideoPaused) {
-                gsap.to("#play-button", { opacity: 0 });
+                window.setActiveCursorIcon(null);
                 videoRef.current.play();
-                gsap.to("#pause-button", { opacity: 100 });
+                window.setActiveCursorIcon("pause-button");
               } else {
-                gsap.to("#play-button", { opacity: 100 });
+                window.setActiveCursorIcon(null);
                 videoRef.current.pause();
-                gsap.to("#pause-button", { opacity: 0 });
+                window.setActiveCursorIcon("play-button");
               }
             }}
           />
@@ -76,16 +74,19 @@ export default function Homepage() {
           className="flex flex-col md:pl-10 md:pb-10 md:pt-10 pl-2 pt-8 pb-4 text-slate-50 font-prom-header-font rounded-lg place-items-center justify-center"
           onMouseEnter={() => {
             gsap.to("#cursor", { scale: 4 });
-            gsap.to("#goto-link", { opacity: 100 });
+            //gsap.to("#goto-link", { opacity: 100 });
+            window.setActiveCursorIcon("goto-link");
           }}
           onMouseLeave={() => {
             gsap.to("#cursor", { scale: 1 });
-            gsap.to("#goto-link", { opacity: 0 });
+            //gsap.to("#goto-link", { opacity: 0 });
+            window.setActiveCursorIcon(null);
           }}
           onClick={() => {
-            navigate("/about");
+            navigate("/project");
             gsap.to("#cursor", { scale: 1 });
-            gsap.to("#goto-link", { opacity: 0 });
+            //gsap.to("#goto-link", { opacity: 0 });
+            window.setActiveCursorIcon(null);
           }}
         >
           <h1 className="font-bold md:text-7xl text-5xl pb-8">About us</h1>

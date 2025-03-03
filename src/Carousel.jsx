@@ -20,14 +20,12 @@ export default function Carousel() {
               key={index}
               className="border-promlogogold border-2 group overflow-hidden text-white font-prom-header-font relative md:p-12 p-4 min-h-40 rounded-lg flex items-center justify-center md:text-lg text-base"
               onMouseEnter={() => {
-                const idElement = "#" + "link-" + index;
                 gsap.to("#cursor", { scale: 4 });
-                gsap.to(idElement, { opacity: 100 });
+                window.setActiveCursorIcon(`link-${index}`);
               }}
               onMouseLeave={() => {
-                const idElement = "#" + "link-" + index;
                 gsap.to("#cursor", { scale: 1 });
-                gsap.to(idElement, { opacity: 0 });
+                window.setActiveCursorIcon(null);
               }}
             >
               <h1 className="text-center">{statement}</h1>

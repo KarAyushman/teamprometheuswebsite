@@ -5,7 +5,7 @@ import "./index.css";
 import Homepage from "./Homepage";
 import Team from "./Team";
 import Contact from "./Contact";
-import About from "./About";
+import Project from "./Project";
 import Layout from "./Layout";
 
 createRoot(document.getElementById("root")).render(
@@ -15,8 +15,8 @@ createRoot(document.getElementById("root")).render(
         <Route path="/" element={<Layout />}>
           <Route index element={<Homepage />} />
           <Route path="team" element={<Team />} />
-          <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="project" element={<Project />} />
         </Route>
       </Routes>
     </BrowserRouter>

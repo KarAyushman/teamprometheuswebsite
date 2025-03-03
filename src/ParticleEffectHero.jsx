@@ -117,11 +117,13 @@ const HeroSection = () => {
           className="flex flex-col text-center p-8 h-svh justify-center items-center"
           onMouseEnter={() => {
             gsap.to("#cursor", { scale: 4 });
-            gsap.to("#down-button", { opacity: 100 });
+            //gsap.to("#down-button", { opacity: 100 });
+            window.setActiveCursorIcon("down-button");
           }}
           onMouseLeave={() => {
             gsap.to("#cursor", { scale: 1 });
-            gsap.to("#down-button", { opacity: 0 });
+            //gsap.to("#down-button", { opacity: 0 });
+            window.setActiveCursorIcon(null);
           }}
           onClick={handleClick}
         >

@@ -29,7 +29,7 @@ export default function Navbar() {
             Prometheus
           </div>
         </NavLink>
-        <div className="flex flex-row md:gap-12 gap-2 justify-center place-items-center text-center">
+        <div className="flex flex-row md:gap-8 gap-2 justify-center place-items-center text-center">
           <NavLink
             to="/team"
             className={({ isActive }) => {
@@ -41,14 +41,14 @@ export default function Navbar() {
             Team
           </NavLink>
           <NavLink
-            to="/about"
+            to="/project"
             className={({ isActive }) => {
               return isActive
                 ? "text-promlogogold font-prom-header-font"
                 : "text-slate-300 font-prom-header-font";
             }}
           >
-            About
+            Project
           </NavLink>
           <NavLink
             to="/contact"

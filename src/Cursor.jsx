@@ -1,23 +1,53 @@
-import { useEffect } from "react";
+// In your CustomCursor.jsx component
+import { useEffect, useRef } from "react";
 import gsap from "gsap";
 
 const CustomCursor = () => {
+  // Reference to keep track of currently active cursor icon
+  const activeIconRef = useRef(null);
+
   useEffect(() => {
     const handleMouseMovement = (event) => {
       const { clientX, clientY } = event;
       gsap.to("#cursor", {
         x: clientX - 24 / 2,
         y: clientY - 24 / 2,
-        duration: 1,
-        delay: 0,
-        ease: "power4.out",
+        duration: 0.5, // Reduced from 1 to make cursor movement more responsive
+        ease: "power2.out", // Changed from power4 for smoother motion
       });
     };
+
     window.addEventListener("mousemove", handleMouseMovement);
     return () => {
       window.removeEventListener("mousemove", handleMouseMovement);
     };
   }, []);
+
+  // Function to handle icon changes
+  const setActiveCursorIcon = (iconId) => {
+    // If there's an active icon, hide it first
+    if (activeIconRef.current && activeIconRef.current !== iconId) {
+      gsap.to(`#${activeIconRef.current}`, {
+        opacity: 0,
+        duration: 0.1, // Quick fade out
+      });
+    }
+
+    // Set new active icon
+    if (iconId) {
+      gsap.to(`#${iconId}`, {
+        opacity: 100,
+        duration: 0.2, // Slightly slower fade in for smooth transition
+      });
+      activeIconRef.current = iconId;
+    } else {
+      activeIconRef.current = null;
+    }
+  };
+
+  // Expose the function globally so it can be called from other components
+  window.setActiveCursorIcon = setActiveCursorIcon;
+
   return (
     <>
       <div
