@@ -56,79 +56,79 @@ const CustomCursor = () => {
       >
         <img
           id="goto-link"
-          src="src\assets\arrow.png"
+          src="/assets/arrow.png"
           alt="Go To Website"
           className="absolute top-0 left-0 p-2 opacity-0"
         />
         <img
           id="play-button"
-          src="src\assets\play-button.png"
+          src="/assets/play-button.png"
           alt="Play Button"
           className="absolute top-0 left-0 p-2 opacity-0"
         />
         <img
           id="pause-button"
-          src="src\assets\pause.png"
+          src="/assets/pause.png"
           alt="pause"
           className="absolute top-0 left-0 p-2 opacity-0"
         />
         <img
           id="down-button"
-          src="src\assets\arrow-down-sign-to-navigate.png"
+          src="/assets/arrow-down-sign-to-navigate.png"
           alt="go down"
           className="absolute top-0 left-0 p-2 opacity-0"
         />
         <img
           id="contact-us-button"
-          src="src\assets\call.png"
+          src="/assets/call.png"
           alt="contact us"
           className="absolute top-0 left-0 p-2 opacity-0"
         />
         <img
           id="prev-slide"
-          src="src\assets\arrow-down-sign-to-navigate.png"
+          src="/assets/arrow-down-sign-to-navigate.png"
           alt="previous"
           className="absolute top-0 left-0 p-2 opacity-0 rotate-90"
         />
         <img
           id="next-slide"
-          src="src\assets\arrow-down-sign-to-navigate.png"
+          src="/assets/arrow-down-sign-to-navigate.png"
           alt="next"
           className="absolute top-0 left-0 p-2 opacity-0 -rotate-90"
         />
         <img
           id="link-0"
-          src="src\assets\numbers\one.png"
+          src="/assets/numbers\one.png"
           alt="one"
           className="absolute top-0 left-0 p-2 opacity-0"
         />
         <img
           id="link-1"
-          src="src\assets\numbers\two.png"
+          src="/assets/numbers\two.png"
           alt="two"
           className="absolute top-0 left-0 p-2 opacity-0"
         />
         <img
           id="link-2"
-          src="src\assets\numbers\three.png"
+          src="/assets/numbers\three.png"
           alt="three"
           className="absolute top-0 left-0 p-2 opacity-0"
         />
         <img
           id="link-3"
-          src="src\assets\numbers\four.png"
+          src="/assets/numbers\four.png"
           alt="four"
           className="absolute top-0 left-0 p-2 opacity-0"
         />
         <img
           id="link-4"
-          src="src\assets\numbers\five.png"
+          src="/assets/numbers\five.png"
           alt="five"
           className="absolute top-0 left-0 p-2 opacity-0"
         />
         <img
           id="link-5"
-          src="src\assets\numbers\six.png"
+          src="/assets/numbers\six.png"
           alt="six"
           className="absolute top-0 left-0 p-2 opacity-0"
         />

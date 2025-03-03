@@ -21,7 +21,7 @@ export default function Navbar() {
       <div className="fixed top-4 right-4 left-4 lg:w-auto w-80 flex flex-row place-items-center justify-between lg:ml-32 lg:mr-32 md:ml-20 md:mr-20 mr-2 ml-2 md:pl-8 md:pr-8 pl-2 pr-4 pt-2 pb-2 mt-4 mb-4 backdrop-blur-sm bg-white/5 rounded-full z-40">
         <NavLink to="/" className="flex flex-row pl-2 place-items-center">
           <img
-            src="./src/assets/Prometheus.png"
+            src="./assets/Prometheus.png"
             alt="Prometheus"
             className="w-20"
           />
