@@ -74,18 +74,15 @@ export default function Homepage() {
           className="flex flex-col md:pl-10 md:pb-10 md:pt-10 pl-2 pt-8 pb-4 text-slate-50 font-prom-header-font rounded-lg place-items-center justify-center"
           onMouseEnter={() => {
             gsap.to("#cursor", { scale: 4 });
-            //gsap.to("#goto-link", { opacity: 100 });
             window.setActiveCursorIcon("goto-link");
           }}
           onMouseLeave={() => {
             gsap.to("#cursor", { scale: 1 });
-            //gsap.to("#goto-link", { opacity: 0 });
             window.setActiveCursorIcon(null);
           }}
           onClick={() => {
             navigate("/project");
             gsap.to("#cursor", { scale: 1 });
-            //gsap.to("#goto-link", { opacity: 0 });
             window.setActiveCursorIcon(null);
           }}
         >
@@ -102,6 +99,34 @@ export default function Homepage() {
         </div>
       </div>
       <Carousel />
+      
+      {/* Sponsors Section */}
+      <div className="flex flex-col items-center justify-center py-16 px-8 text-slate-50">
+        <h2 className="font-bold font-prom-header-font md:text-5xl text-3xl mb-10 text-promlogogold">Our Sponsors</h2>
+        <div className="flex flex-wrap justify-center gap-12 items-center">
+          <a 
+            href="https://www.solidworks.com" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="transition-transform duration-300 hover:scale-110"
+            onMouseEnter={() => {
+              gsap.to("#cursor", { scale: 4 });
+              window.setActiveCursorIcon("goto-link");
+            }}
+            onMouseLeave={() => {
+              gsap.to("#cursor", { scale: 1 });
+              window.setActiveCursorIcon(null);
+            }}
+          >
+            <img 
+              src="/src/assets/solidworks.svg" 
+              alt="SOLIDWORKS" 
+              className="h-20 md:h-28 object-contain"
+            />
+          </a>
+        </div>
+      </div>
+      
       <hr className="p-1 border-promlogogold" />
     </div>
   );

@@ -29,12 +29,10 @@ export default function Project() {
         <div
           className="border-promlogogold border-2 rounded-lg p-8 mb-12"
           onMouseEnter={() => {
-            gsap.to("#cursor", { scale: 4 });
-            gsap.to("#link-0", { opacity: 100 });
+            gsap.to("#cursor", { scale: 2 });
           }}
           onMouseLeave={() => {
             gsap.to("#cursor", { scale: 1 });
-            gsap.to("#link-0", { opacity: 0 });
           }}
         >
           <h2 className="text-3xl font-bold text-white mb-4 font-prom-header-font">
@@ -76,12 +74,7 @@ export default function Project() {
             {activeVideo === "software" && (
               <div className="bg-gray-800 rounded-lg overflow-hidden aspect-video flex items-center justify-center">
                 <div className="text-center p-8">
-                  <p className="text-promlogogold text-lg font-prom-header-font mb-4">
-                    Software Demo Video
-                  </p>
-                  <p className="text-white font-prom-header-font">
-                    (Video placeholder - content to be added later)
-                  </p>
+                  <video src="src\assets\software.mp4" controls className="w-full h-full object-contain"></video>
                 </div>
               </div>
             )}
@@ -92,12 +85,10 @@ export default function Project() {
         <div
           className="border-promlogogold border-2 rounded-lg p-8 mb-12"
           onMouseEnter={() => {
-            gsap.to("#cursor", { scale: 4 });
-            gsap.to("#link-1", { opacity: 100 });
+            gsap.to("#cursor", { scale: 2 });
           }}
           onMouseLeave={() => {
             gsap.to("#cursor", { scale: 1 });
-            gsap.to("#link-1", { opacity: 0 });
           }}
         >
           <h2 className="text-3xl font-bold text-white mb-4 font-prom-header-font">
@@ -154,12 +145,10 @@ export default function Project() {
         <div
           className="border-promlogogold border-2 rounded-lg p-8"
           onMouseEnter={() => {
-            gsap.to("#cursor", { scale: 4 });
-            gsap.to("#link-2", { opacity: 100 });
+            gsap.to("#cursor", { scale: 2 });
           }}
           onMouseLeave={() => {
             gsap.to("#cursor", { scale: 1 });
-            gsap.to("#link-2", { opacity: 0 });
           }}
         >
           <h2 className="text-3xl font-bold text-white mb-4 font-prom-header-font">
