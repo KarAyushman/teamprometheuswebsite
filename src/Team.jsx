@@ -26,7 +26,7 @@ export default function Team() {
           name: member.Name,
           designation: member.Designation,
           // Use a static path that follows the pattern in the assets/teamImages folder
-          photo: member.Name ? `/src/assets/teamImages/${member.Name.toLowerCase().replace(/\s+/g, '_')}.jpg` : null,
+          photo: member.Name ? `/assets/teamImages/${member.Name.toLowerCase().replace(/\s+/g, '_')}.jpg` : null,
           linkedin: member.Linkedin,
           github: member.Github,
           details: member.Description || "Team member at Prometheus."
