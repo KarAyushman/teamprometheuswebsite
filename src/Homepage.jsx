@@ -44,7 +44,7 @@ export default function Homepage() {
           <video
             ref={videoRef}
             className="md:max-w-2xl rounded-2xl"
-            src="/src/assets/almost-scores.webm"
+            src="/assets/almost-scores.webm"
             onMouseEnter={() => {
               gsap.to("#cursor", { scale: 4 });
               if (isVideoPaused) {

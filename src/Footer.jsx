@@ -164,7 +164,7 @@ const ContactForm = () => {
           </div>
           <div className="flex flex-col place-items-center align-middle">
             <img
-              src="src\assets\Prometheus.png"
+              src="assets\Prometheus.png"
               alt="Prometheus Logo"
               className="flex max-w-40"
             />
