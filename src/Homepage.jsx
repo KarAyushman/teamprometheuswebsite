@@ -119,7 +119,7 @@ export default function Homepage() {
             }}
           >
             <img 
-              src="/src/assets/solidworks.svg" 
+              src="/assets/solidworks.svg"
               alt="SOLIDWORKS" 
               className="h-20 md:h-28 object-contain"
             />
