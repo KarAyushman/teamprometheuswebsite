@@ -10,7 +10,7 @@ export default function Team() {
   useEffect(() => {
     const loadTeamData = async () => {
       try {
-        const response = await fetch('/src/team_details.xlsx');
+        const response = await fetch('/assets/team_details.xlsx');
         const arrayBuffer = await response.arrayBuffer();
         const workbook = XLSX.read(arrayBuffer, { type: 'array' });
         
