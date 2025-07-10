@@ -14,17 +14,31 @@ export default function Contact() {
     {
       id: 1,
       name: "VIT University",
-      logo: "https://placehold.co/200x100/222/gold?text=VIT",
+      logo: "https://vit.ac.in/wp-content/uploads/2023/06/VIT-40-logo-Combo-white.png",
       tier: "Academic",
       description: "Our home institution providing facilities, mentorship, and academic support for our robotics initiatives."
     },
     {
       id: 2,
       name: "SOLIDWORKS",
-      logo: "https://placehold.co/200x100/222/gold?text=SOLIDWORKS",
+      logo: "/assets/solidworks.svg",
       tier: "Technical",
       description: "Providing industry-standard CAD software for our team to design cutting-edge robotic systems."
-    }
+    },
+    {
+      id: 2,
+      name: "ANSYS",
+      logo: "/assets/ansys.png",
+      tier: "Technical",
+      description: "Providing industry-standard simulation software for our team to perform advanced engineering analysis and optimize the performance of robotic systems."
+    },
+    {
+      id: 2,
+      name: "Altium",
+      logo: "/assets/altium.png",
+      tier: "Technical",
+      description: "Providing industry-standard PCB design software for our team to create high-performance electronic circuits and accelerate the development of innovative robotic hardware."
+    },
   ];
 
   // Sample FAQ data
@@ -32,7 +46,7 @@ export default function Contact() {
     {
       id: 1,
       question: "How can my company sponsor Team Prometheus?",
-      answer: "We offer various sponsorship tiers with different benefits. Our sponsorship packages include logo placement on our robots and team attire, social media recognition, direct collaboration opportunities, and more. Please contact us at sponsorship@prometheus.team for detailed information."
+      answer: "We offer various sponsorship tiers with different benefits. Our sponsorship packages include logo placement on our robots and team attire, social media recognition, direct collaboration opportunities, and more. Please contact us at teamprometheus@vit.ac.in for detailed information."
     },
     {
       id: 2,
@@ -78,7 +92,7 @@ export default function Contact() {
     { label: "Team Members", value: "30+" },
     { label: "Competitions", value: "0" },
     { label: "Robot Designs", value: "3" },
-    { label: "Sponsors", value: "3" },
+    { label: "Sponsors", value: "4" },
     { label: "Current Projects", value: "5" }
   ];
 
