@@ -99,14 +99,16 @@ export default function Homepage() {
         </div>
       </div>
       <Carousel />
-      
+
       {/* Sponsors Section */}
       <div className="flex flex-col items-center justify-center py-16 px-8 text-slate-50">
-        <h2 className="font-bold font-prom-header-font md:text-5xl text-3xl mb-10 text-promlogogold">Our Sponsors</h2>
+        <h2 className="font-bold font-prom-header-font md:text-5xl text-3xl mb-10 text-promlogogold">
+          Our Sponsors
+        </h2>
         <div className="flex flex-wrap justify-center gap-12 items-center">
-          <a 
-            href="https://www.solidworks.com" 
-            target="_blank" 
+          <a
+            href="https://www.solidworks.com"
+            target="_blank"
             rel="noopener noreferrer"
             className="transition-transform duration-300 hover:scale-110"
             onMouseEnter={() => {
@@ -118,15 +120,57 @@ export default function Homepage() {
               window.setActiveCursorIcon(null);
             }}
           >
-            <img 
+            <img
               src="/assets/solidworks.svg"
-              alt="SOLIDWORKS" 
+              alt="SOLIDWORKS"
+              className="h-20 md:h-28 object-contain"
+            />
+          </a>
+
+          <a
+            href="https://www.ansys.com/en-in"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition-transform duration-300 hover:scale-110"
+            onMouseEnter={() => {
+              gsap.to("#cursor", { scale: 4 });
+              window.setActiveCursorIcon("goto-link");
+            }}
+            onMouseLeave={() => {
+              gsap.to("#cursor", { scale: 1 });
+              window.setActiveCursorIcon(null);
+            }}
+          >
+            <img
+              src="/assets/ansys.png"
+              alt="ANSYS"
+              className="h-20 md:h-28 object-contain"
+            />
+          </a>
+
+          <a
+            href="https://www.altium.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition-transform duration-300 hover:scale-110"
+            onMouseEnter={() => {
+              gsap.to("#cursor", { scale: 4 });
+              window.setActiveCursorIcon("goto-link");
+            }}
+            onMouseLeave={() => {
+              gsap.to("#cursor", { scale: 1 });
+              window.setActiveCursorIcon(null);
+            }}
+          >
+            <img
+              src="/assets/altium.png"
+              alt="ALTIUM"
               className="h-20 md:h-28 object-contain"
             />
           </a>
         </div>
       </div>
-      
+
       <hr className="p-1 border-promlogogold" />
     </div>
   );

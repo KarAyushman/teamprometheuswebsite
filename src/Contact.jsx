@@ -78,7 +78,7 @@ export default function Contact() {
     { label: "Team Members", value: "30+" },
     { label: "Competitions", value: "0" },
     { label: "Robot Designs", value: "3" },
-    { label: "Sponsors", value: "2" },
+    { label: "Sponsors", value: "3" },
     { label: "Current Projects", value: "5" }
   ];
 
